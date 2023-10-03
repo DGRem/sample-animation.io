@@ -1,4 +1,3 @@
-// Get references to the elements
 const fadingImage = document.getElementById("female-image");
 const fromLeft = document.getElementById("tag-line");
 const scaleOut = document.getElementById("tag-line")
@@ -9,17 +8,14 @@ const logoIn = document.getElementById("kodego-logo")
 const replayIn = document.getElementById("btn-replay")
 
 
-// Function to fade in the image
 const fadeIn = () => {
     fadingImage.style.opacity = 1;
 };
 
-// Function to fade out the image
 const fadeOut = () => {
     fadingImage.style.opacity = 0;
 };
 
-// Function to slide the element from the left
 const slideLeft = () => {
     fromLeft.style.transform = "translateX(0)";
 };
@@ -56,17 +52,13 @@ const replayAnimation = () => {
     location.reload();
 };
 
-// Start with an instant fadeIn
 fadeIn();
 
-// After a 1-second delay, trigger fadeIn again
-setTimeout(fadeIn, 1000); // 1000 milliseconds = 1 second
+setTimeout(fadeIn, 2000);
 
-// After a 2-second delay, trigger fadeOut
-setTimeout(fadeOut, 2000); // 2000 milliseconds = 2 seconds
+setTimeout(fadeOut, 2000);
 
-// After a 1-second delay, trigger the slideLeft animation
-setTimeout(slideLeft, 500); // 1000 milliseconds = 1 second
+setTimeout(slideLeft, 500);
 
 setTimeout(shrinkDown, 2000);
 
