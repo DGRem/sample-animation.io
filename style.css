@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.container {
+    position: relative;
+    background-image: url(TechExamMaterials/background.png);
+    width: 70%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.image {
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.tagLine {
+    margin-top: 30px;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.headTag {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.textInfo {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 100px;
+    width: 90%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 3;
+}
+
+.learnMore {
+    position: absolute;
+    top: 700px;
+    left: 475px;
+    width: 350px;
+    height: 100px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 4;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    right: 140px;
+    width: 500px;
+    transform: translate(-250%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 5;
+}
+
+.replay {
+    position: absolute;
+    top: 800px;
+    left: 510px;
+    width: 300px;
+    height: 80px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 6;
+    cursor: pointer;
+}
